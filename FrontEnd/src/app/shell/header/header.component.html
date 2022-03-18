@@ -1,0 +1,26 @@
+<nz-header>
+  <ul nz-menu [nzTheme]="'dark'" [nzMode]="'horizontal'" style="line-height: 64px" [nzSelectable]="false" class="right">
+    <!-- <li nz-menu-item>
+      <nz-dropdown>
+        <a nz-dropdown>
+          Ngôn ngữ: <b> {{ currentLanguage }} </b> <i nz-icon type="down"></i>
+        </a>
+        <ul nz-menu nzSelectable *ngFor="let language of languages" (click)="setLanguage(language)">
+          <li nz-menu-item>
+            {{ language }}
+          </li>
+        </ul>
+      </nz-dropdown>
+    </li> -->
+    <li nz-menu-item>
+      <nz-dropdown>
+        <a nz-dropdown style="color: white"> Tài khoản: {{ username }} <i nz-icon type="down"></i> </a>
+        <ul nz-menu nzSelectable>
+          <li nz-menu-item>
+            <a (click)="logout()" translate>Logout</a>
+          </li>
+        </ul>
+      </nz-dropdown>
+    </li>
+  </ul>
+</nz-header>
